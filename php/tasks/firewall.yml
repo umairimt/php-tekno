@@ -2,7 +2,8 @@
  - name: enable httpd service in firewall
    firewalld:
       zone: public
-      service: httpd
+      service: http
+      port: 80/tcp
       permanent: yes
       state: enabled
 
